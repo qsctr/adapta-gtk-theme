@@ -1164,7 +1164,11 @@ $extra_spacing: 2.5px;
       padding: if($eta == false, 0 5px, 0 3px);
     }
 
-    StLabel { padding: if($eta == false, 0 4px 1px, 0 2px 1px); }
+    StLabel {
+      padding: if($eta == false, 0 4px 1px, 0 2px 1px);
+      // Fix duplicate indicator
+      box-shadow: none;
+    }
 
     StIcon { margin-top: 1px; } // reset base-line
 
