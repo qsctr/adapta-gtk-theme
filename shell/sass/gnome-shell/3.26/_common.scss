@@ -1571,9 +1571,10 @@ $extra_spacing: 2.5px;
       spacing: 1px; // for internal seprators
       margin-bottom: if($eta == false, 0.6em, 0.4em);
       padding: 0;
-      border: 1px solid $menuentry_hidden_fill_color;
-      border-radius: 2px;
-      background-color: $borders_color; // for internal seprators
+      // border: 1px solid $menuentry_hidden_fill_color;
+      // border-radius: 2px;
+      // background-color: $borders_color; // for internal seprators
+      border: none;
     }
   }
 
@@ -1587,13 +1588,16 @@ $extra_spacing: 2.5px;
   // if switched to scrolled-view mode.
   // So only padding property seems enough to control the spacing.
   padding: if($eta == false, 0.9em, 0.6em);
-  border-radius: 0;
+  // border-radius: 0;
+  border-radius: 2px;
   background-color: transparent;
   color: $osd_fg_color;
+  border: none;
 
   .popup-menu & {
     padding: if($eta == false, 0.6em, 0.45em);
-    background-color: $base_color;
+    // background-color: $base_color;
+    background-color: mix($fg_color, $base_color, 7%);
     color: $secondary_fg_color;
 
     .message-icon-bin > StIcon,
@@ -1694,6 +1698,10 @@ $extra_spacing: 2.5px;
       color: $accent_label_color;
       background-color: $accent_fill_color;
     }
+  }
+
+  &-body {
+    color: $osd_fg_color;
   }
 }
 
