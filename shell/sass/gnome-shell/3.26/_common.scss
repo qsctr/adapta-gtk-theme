@@ -1259,7 +1259,11 @@ $extra_spacing: 2.5px;
                              0.5em 0.7em);
 }
 
-.calendar { margin-bottom: if($eta == false, 1em, 0.7em); }
+.calendar {
+  background-color: transparent;
+  border: none;
+  margin-bottom: if($eta == false, 1em, 0.7em);
+}
 
 .calendar,
 .datemenu-today-button,
