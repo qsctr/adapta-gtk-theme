@@ -1543,8 +1543,13 @@ $extra_spacing: 2.5px;
 .message-list {
   width: if($eta == false, 420px, 380px);
 
-  &-clear-button.button { // 'Clear all' button
+  &-controls {
     margin:  if($eta == false, 1.5em 1.5em 0, 1.2em 1.2em 0);
+    color: $fg_color;
+  }
+
+  &-clear-button.button { // 'Clear all' button
+    // margin:  if($eta == false, 1.5em 1.5em 0, 1.2em 1.2em 0);
     color: $secondary_accent_label_color;
     background-color: transparent;
     font-weight: 500;
