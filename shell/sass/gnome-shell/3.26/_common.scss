@@ -1602,7 +1602,7 @@ $extra_spacing: 2.5px;
   .popup-menu & {
     padding: if($eta == false, 0.6em, 0.45em);
     // background-color: $base_color;
-    background-color: mix($fg_color, $base_color, 7%);
+    background-color: transparent;
     color: $secondary_fg_color;
 
     .message-icon-bin > StIcon,
