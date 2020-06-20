@@ -1,0 +1,4 @@
+#! /bin/bash
+
+./autogen.sh --prefix="$HOME/.local" --disable-cinnamon --disable-flashback --disable-xfce --disable-mate --disable-openbox
+./reload
