@@ -1828,7 +1828,14 @@ $extra_spacing: 2.5px;
 .window-close {
   height: 32px;
   width: 32px;
-  -shell-close-overlap: 24px;
+  // Fix double close button glitch
+  // https://forum.manjaro.org/t/solved-glitch-on-gnome-activities-overview/85485/5
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  color: transparent;
+  -shell-close-overlap: 16px;
   -st-background-image-shadow: $z-depth-1;
   background-image:
     if($gdm == false,
