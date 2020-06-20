@@ -1,3 +1,7 @@
+This is a fork of [adapta-gtk-theme](https://github.com/adapta-project/adapta-gtk-theme) with updates to improve compatibility with GNOME 3.36+ since the original theme is not developed anymore.
+
+---
+
 <img src="https://github.com/adapta-project/adapta-github-resources/blob/master/images/logo_thumb.png" alt="Logo" align="left" /> Adapta-gtk-theme
 ======
 
