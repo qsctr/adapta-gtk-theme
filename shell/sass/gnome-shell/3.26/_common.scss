@@ -1298,6 +1298,8 @@ $extra_spacing: 2.5px;
 .weather-button,
 .events-section-title {
   color: $secondary_fg_color;
+  background-color: transparent;
+  border: none;
   &:hover,
   &:focus {
     color: $fg_color;
@@ -1338,7 +1340,20 @@ $extra_spacing: 2.5px;
 
 .world-clocks-grid { spacing-rows: 0.4em; }
 
+.world-clocks-city,
+.world-clocks-time {
+  color: $fg_color;
+}
+
+.world-clocks-timezone {
+  color: $secondary_fg_color;
+}
+
 .weather-box { spacing: 0.4em; }
+
+.weather-forecast-time {
+  color: $secondary_fg_color;
+}
 
 .calendar-month-label {
   padding: 4px 0;
